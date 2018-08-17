@@ -30,4 +30,9 @@ function createTweet(input) {
       document.querySelector('.tweet').setAttribute('href', tweet);
   }
 }
-
+document.addEventListener('DOMContentLoaded', function() {
+  getQuote();
+  document.querySelector('.trigger').addEventListener('click', function() {
+      getQuote();
+  });
+});
